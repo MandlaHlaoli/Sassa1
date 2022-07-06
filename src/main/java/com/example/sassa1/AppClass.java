@@ -16,7 +16,7 @@ public class AppClass extends Application {
 
     public static final String APPLICATION_ID = "AB0709D9-45C6-6063-FFC1-E7B759B99B00";
     public static final String API_KEY = "DA16D55B-F6BA-4843-8FA6-91BBE47779E5";
-    public static final String SERVER_URL = "http://api.backendless.com";
+    public static final String SERVER_URL =  "http://api.backendless.com";
 
     static final String SERVICE_NAME = "Twilio";
 
