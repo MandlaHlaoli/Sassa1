@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sassa1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.SEND_SMS"/>
+    <application
+        android:name=".AppClass"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_only"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_only"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sassa1">
+        <activity
+            android:name=".ScheduleTimesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListAppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageMyDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThankYouActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LanguageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdministratorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

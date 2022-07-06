@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryLight"
+    tools:context=".ManageMyDataActivity">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/loading_please_wait"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/login_form"
+        android:orientation="vertical">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/header_text"
+            android:textColor="@color/header_activity"
+            android:text="@string/manage_my_appointments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo_only"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/iv_size"
+            android:layout_height="@dimen/iv_size"/>
+        <Button
+            android:id="@+id/btnBook"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="@dimen/end_start"
+            android:layout_marginEnd="@dimen/end_start"
+            android:text="@string/book_appointment"
+            android:background="@drawable/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnViewAppointments"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/buttons"
+            android:layout_marginStart="@dimen/end_start"
+            android:layout_marginEnd="@dimen/end_start"
+            android:text="@string/view_my_appointment_s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

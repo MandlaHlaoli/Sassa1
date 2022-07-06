@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryLight"
+    tools:context=".UserActivity">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/loading_please_wait"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/login_form"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etFullNames"
+            android:hint="@string/full_names"
+            android:editable="false"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"/>
+
+        <EditText
+            android:id="@+id/etSurname"
+            android:hint="@string/surname"
+            android:editable="false"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"/>
+
+        <EditText
+            android:id="@+id/iDNumber"
+            android:hint="@string/id_number"
+            android:editable="false"
+            android:inputType="number"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"/>
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:hint="@string/residential_address"
+            android:inputType="textPostalAddress"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"/>
+
+        <EditText
+            android:id="@+id/etNearestStation"
+            android:hint="@string/nearest_sassa_station"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"/>
+
+        <TextView
+            android:hint="@string/select_grant_type"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"/>
+        <Spinner
+            android:id="@+id/spGrantType"
+            android:hint="@string/nearest_sassa_station"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/select_grant_type"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"/>
+        <Spinner
+            android:id="@+id/spGrantFor"
+            android:hint="@string/nearest_sassa_station"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <DatePicker
+            android:id="@+id/dpAppDate"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:calendarTextColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
+
+
+        <EditText
+            android:id="@+id/etRequest"
+            android:hint="@string/other_requests"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"/>
+
+        <TextView
+            android:text="@string/indicate_if_this_is_your_first_booking_choose_number"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"/>
+        <EditText
+            android:id="@+id/etBookingNumber"
+            android:hint="@string/booking_number"
+            android:inputType="number"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:text="@string/cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttons"
+                android:layout_marginStart="@dimen/end_start"
+                android:layout_marginEnd="@dimen/end_start"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnSubmit"
+                android:text="@string/submit"
+                android:layout_width="0dp"
+                android:background="@drawable/buttons"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

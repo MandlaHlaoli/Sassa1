@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="end_start">20dp</dimen>
+    <dimen name="header_text">30sp</dimen>
+    <dimen name="iv_size">180dp</dimen>
+    <dimen name="text_size">23sp</dimen>
+</resources>

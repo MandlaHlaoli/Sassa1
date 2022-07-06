@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Sassa1</string>
+    <string name="received_application">Your application has been received.\n You will be notified by an SMS for your next appointment</string>
+    <string name="click_home">Click Home to
+return to home page
+or click Exit to exit
+the application.</string>
+    <string name="go_back">GO BACK</string>
+    <string name="users_appointment_list">Users Appointment List</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="loading_please_wait">Loading please wait....</string>
+    <string name="short_description">Short Description!</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="welcome">Welcome!</string>
+    <string name="manage_my_appointments">Manage my appointments</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="view_my_appointment_s">View My Appointment(s)</string>
+    <string name="please_fill_in">Please fill in</string>
+    <string name="full_names">Full Names</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="create_password">Create password</string>
+    <string name="phone_number">Phone number</string>
+    <string name="age">Age</string>
+    <string name="id_number">ID number</string>
+    <string name="surname">Surname</string>
+    <string name="forgot_reset_password">Forgot/Reset Password</string>
+    <string name="reset_password">Reset password</string>
+    <string name="schedule_appointment">Schedule Appointment</string>
+    <string name="id_no">ID no:</string>
+    <string name="initials_amp_surname"><![CDATA[Initials&surname :]]></string>
+    <string name="grant_type">Grant type:</string>
+    <string name="station">Station:</string>
+    <string name="appointment_date">Appointment Date:</string>
+    <string name="counter_number">Counter number:</string>
+    <string name="queue_number">Queue number:</string>
+    <string name="save">Save</string>
+    <string name="appointment_confirmation">Appointment Confirmation</string>
+    <string name="home">Home</string>
+    <string name="exit">Exit</string>
+    <string name="residential_address">Residential Address</string>
+    <string name="select_grant_type">Select grant type</string>
+    <string name="other_requests">Other requests</string>
+    <string name="indicate_if_this_is_your_first_booking_choose_number">Indicate if this is your first booking choose number</string>
+    <string name="booking_number">Booking number</string>
+    <string name="time_of_appointment">Time of Appointment :</string>
+    <string name="my_appointment_info">My Appointment Info</string>
+    <string name="my_appointment_list">My appointment list</string>
+    <string name="nearest_sassa_station">Nearest SASSA Station</string>
+    <string name="tap_for_more_info">Tap for more Info</string>
+</resources>

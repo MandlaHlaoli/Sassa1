@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryLight"
+    tools:context=".RegisterUserActivity">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/loading_please_wait"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/login_form"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/header_activity"
+            android:textStyle="italic"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:text="@string/please_fill_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etFullNames"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:hint="@string/full_names"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etSurname"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:hint="@string/surname"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etIdNumber"
+            android:hint="@string/id_number"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etAge"
+            android:hint="@string/age"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="@string/email"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:hint="@string/phone_number"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:inputType="phone"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etPass"
+            android:hint="@string/create_password"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etConfirmPass"
+            android:hint="@string/confirm_password"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:text="@string/submit"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:background="@drawable/buttons"
+        android:layout_marginStart="@dimen/end_start"
+        android:layout_marginEnd="@dimen/end_start"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnCancel"
+        android:text="@string/cancel"
+        android:layout_weight="1"
+        android:background="@drawable/buttons"
+        android:layout_marginStart="@dimen/end_start"
+        android:layout_marginEnd="@dimen/end_start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

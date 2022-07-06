@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryLight"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_only"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome" />
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/short_description" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="@dimen/end_start"
+        android:layout_marginEnd="@dimen/end_start"
+        android:text="@string/login"
+        android:background="@drawable/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/end_start"
+        android:layout_marginRight="@dimen/end_start"
+        android:background="@drawable/buttons"
+        android:text="@string/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnForgotPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/end_start"
+        android:layout_marginRight="@dimen/end_start"
+        android:background="@drawable/buttons"
+        android:text="@string/forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/end_start"
+        android:layout_marginRight="@dimen/end_start"
+        android:background="@drawable/buttons"
+        android:text="@string/exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
