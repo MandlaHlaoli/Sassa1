@@ -139,6 +139,8 @@ public class RegisterUserActivity extends AppCompatActivity {
         });
 
     }
+
+
     /**
      * Shows the progress UI and hides the login form.
      */

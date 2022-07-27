@@ -147,15 +147,8 @@ public class AppClass extends Application {
         }
         return initials.toString();
     }
-    public void sendMessageAsync(String phoneNumber, String message, String mediaUrl, Object options, AsyncCallback<Object> callback)
-    {
+    public void sendMessageAsync(String phoneNumber, String message, String mediaUrl, Object options, AsyncCallback<Object> callback) {
         Object[] args = new Object[]{phoneNumber, message, mediaUrl, options};
-        Backendless.CustomService.invoke( SERVICE_NAME, "sendMessage", args, Object.class, callback);
-    }
-
-    public Object sendMessage(String phoneNumber, String message, String mediaUrl, Object options)
-    {
-        Object[] args = new Object[]{phoneNumber, message, mediaUrl, options};
-        return Backendless.CustomService.invoke( SERVICE_NAME, "sendMessage", args, Object.class );
+        Backendless.CustomService.invoke(SERVICE_NAME, "sendMessage", args, Object.class, callback);
     }
 }
